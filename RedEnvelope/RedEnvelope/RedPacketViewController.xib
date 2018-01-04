@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RedPacketViewController">
+            <connections>
+                <outlet property="bachImgViewH" destination="QHa-WS-KgY" id="V2X-cs-Gpz"/>
+                <outlet property="backImageView" destination="0XS-ca-q5n" id="h4A-3r-u5B"/>
+                <outlet property="backImgViewW" destination="pE3-3Y-JLq" id="glx-SR-IQH"/>
+                <outlet property="backImgViewX" destination="MR3-Ti-Rwb" id="kDU-sP-2JD"/>
+                <outlet property="backImgViewY" destination="o9X-ag-fb5" id="lCy-PF-BWS"/>
+                <outlet property="closeButton" destination="Te2-qK-9WZ" id="9Go-1a-OdQ"/>
+                <outlet property="detailLabel" destination="NAa-ie-kO0" id="bOO-bp-zMA"/>
+                <outlet property="iconImageView" destination="8mo-qe-GdH" id="JSL-Pj-zs6"/>
+                <outlet property="messageLabel" destination="oaP-Eo-qZI" id="qIF-g7-7p8"/>
+                <outlet property="nameLabel" destination="frj-va-AQj" id="zBd-rp-Wcc"/>
+                <outlet property="openBtnH" destination="j8E-q0-o7J" id="948-de-Zy8"/>
+                <outlet property="openBtnW" destination="nMJ-cA-L1F" id="ZBp-dV-Dah"/>
+                <outlet property="openButton" destination="3YZ-Z4-yCL" id="j6r-Is-goP"/>
+                <outlet property="redPacketWindow" destination="fXN-nD-XlC" id="7X1-x8-WHM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <window contentMode="scaleToFill" resizesToFullScreen="NO" id="fXN-nD-XlC">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i5M-Pr-FkT">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redpacket_bg" translatesAutoresizingMaskIntoConstraints="NO" id="0XS-ca-q5n">
+                            <rect key="frame" x="13" y="110" width="350" height="468"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="468" id="QHa-WS-KgY"/>
+                                <constraint firstAttribute="width" constant="350" id="pE3-3Y-JLq"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3YZ-Z4-yCL">
+                            <rect key="frame" x="134.5" y="364" width="107" height="107"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="107" id="j8E-q0-o7J"/>
+                                <constraint firstAttribute="width" constant="107" id="nMJ-cA-L1F"/>
+                            </constraints>
+                            <state key="normal" title="open" image="redpacket_open_btn"/>
+                            <connections>
+                                <action selector="openButtonAction:" destination="-1" eventType="touchUpInside" id="8bz-nn-22e"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aries" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frj-va-AQj">
+                            <rect key="frame" x="25" y="246" width="325" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="Mja-VT-i0F"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="恭喜发财,大吉大利!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oaP-Eo-qZI">
+                            <rect key="frame" x="20" y="319" width="335" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="OYY-Dh-j7P"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="8mo-qe-GdH">
+                            <rect key="frame" x="164" y="188" width="48" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="48" id="2JJ-XW-tRN"/>
+                                <constraint firstAttribute="height" constant="48" id="VJi-Mt-wMh"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Te2-qK-9WZ">
+                            <rect key="frame" x="32" y="134" width="15" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="15" id="9x3-av-bi6"/>
+                                <constraint firstAttribute="width" constant="15" id="cta-Ri-V9H"/>
+                            </constraints>
+                            <state key="normal" title="Button" image="close_btn"/>
+                            <connections>
+                                <action selector="closeButtonAction:" destination="-1" eventType="touchUpInside" id="E6I-SO-cSw"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="给你发了一个红包" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NAa-ie-kO0">
+                            <rect key="frame" x="20" y="281" width="335" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="S6G-89-GdA"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="oaP-Eo-qZI" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="AUR-ea-cpO"/>
+                        <constraint firstItem="NAa-ie-kO0" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="Jln-TX-A9o"/>
+                        <constraint firstItem="Te2-qK-9WZ" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="114" id="Lqe-Vn-u4u"/>
+                        <constraint firstItem="0XS-ca-q5n" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="12.5" id="MR3-Ti-Rwb"/>
+                        <constraint firstItem="NAa-ie-kO0" firstAttribute="top" secondItem="frj-va-AQj" secondAttribute="bottom" constant="10" id="ONS-tz-dtK"/>
+                        <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="frj-va-AQj" secondAttribute="trailing" constant="25" id="RmZ-Lq-SiS"/>
+                        <constraint firstItem="oaP-Eo-qZI" firstAttribute="top" secondItem="NAa-ie-kO0" secondAttribute="bottom" constant="18" id="Y4v-54-AEN"/>
+                        <constraint firstItem="3YZ-Z4-yCL" firstAttribute="top" secondItem="oaP-Eo-qZI" secondAttribute="bottom" constant="25" id="YaG-fS-uD5"/>
+                        <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="NAa-ie-kO0" secondAttribute="trailing" constant="20" id="c2j-s0-c4Z"/>
+                        <constraint firstItem="3YZ-Z4-yCL" firstAttribute="centerX" secondItem="0XS-ca-q5n" secondAttribute="centerX" id="dOp-Di-bbW"/>
+                        <constraint firstItem="oaP-Eo-qZI" firstAttribute="centerY" secondItem="0XS-ca-q5n" secondAttribute="centerY" constant="-15" id="gMr-f6-Nip"/>
+                        <constraint firstItem="Te2-qK-9WZ" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="32" id="i4T-W0-RdI"/>
+                        <constraint firstItem="frj-va-AQj" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="25" id="iQ2-GZ-gY6"/>
+                        <constraint firstItem="0XS-ca-q5n" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="89.5" id="o9X-ag-fb5"/>
+                        <constraint firstItem="8mo-qe-GdH" firstAttribute="centerX" secondItem="0XS-ca-q5n" secondAttribute="centerX" id="pSk-sB-ybh"/>
+                        <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="oaP-Eo-qZI" secondAttribute="trailing" constant="20" id="qOu-Cc-nTD"/>
+                        <constraint firstItem="frj-va-AQj" firstAttribute="top" secondItem="8mo-qe-GdH" secondAttribute="bottom" constant="10" id="rXN-Gb-oky"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="i5M-Pr-FkT" firstAttribute="leading" secondItem="gB7-lK-u8t" secondAttribute="leading" id="8Qc-HH-hgm"/>
+                <constraint firstItem="i5M-Pr-FkT" firstAttribute="trailing" secondItem="gB7-lK-u8t" secondAttribute="trailing" id="F2w-pb-c2X"/>
+                <constraint firstItem="i5M-Pr-FkT" firstAttribute="bottom" secondItem="gB7-lK-u8t" secondAttribute="bottom" id="Qh5-yZ-1m1"/>
+                <constraint firstItem="i5M-Pr-FkT" firstAttribute="top" secondItem="fXN-nD-XlC" secondAttribute="top" id="cHJ-7K-epr"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="gB7-lK-u8t"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </window>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+    </objects>
+    <resources>
+        <image name="avatar" width="50" height="50"/>
+        <image name="close_btn" width="15" height="15"/>
+        <image name="redpacket_bg" width="350" height="468"/>
+        <image name="redpacket_open_btn" width="107" height="107"/>
+    </resources>
+</document>
